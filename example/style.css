@@ -1,0 +1,12 @@
+.front-debugger {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.front-debugger p {
+  padding: 12px 20px;
+  margin-bottom: 6px;
+}
