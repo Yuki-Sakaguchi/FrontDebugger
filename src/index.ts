@@ -1,3 +1,5 @@
+import './style.css';
+
 interface Options {
   speed: number;
   style: boolean;

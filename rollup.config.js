@@ -1,6 +1,7 @@
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from 'rollup-plugin-commonjs'
 import { uglify } from 'rollup-plugin-uglify'
+import postcss from 'rollup-plugin-postcss'
 
 export default [
   {
@@ -12,6 +13,9 @@ export default [
       name: "FrontDebugger",
     },
     plugins: [
+      postcss({
+        extensions: ['.css']
+      }),
       typescript(),
       commonjs()
     ]
@@ -25,6 +29,9 @@ export default [
       name: "FrontDebugger",
     },
     plugins: [
+      postcss({
+        extensions: ['.css']
+      }),
       typescript(),
       commonjs(),
       uglify()

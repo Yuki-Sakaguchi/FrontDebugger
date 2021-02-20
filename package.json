@@ -11,8 +11,10 @@
   "devDependencies": {
     "dtsmake": "0.0.10",
     "jest": "^24.8.0",
+    "postcss": "^8.2.6",
     "rollup": "^1.1.2",
     "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.19.2",
     "rollup-plugin-uglify": "^6.0.2",
     "ts-jest": "^24.0.2",
@@ -21,7 +23,6 @@
   "dependencies": {
     "@types/jest": "^24.0.15",
     "@types/node": "^12.6.2",
-    "createjs": "^1.0.1",
     "typescript": "^3.3.1"
   },
   "main": "lib/front-debugger.js",
