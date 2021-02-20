@@ -33,7 +33,7 @@
   "homepage": "https://github.com/Yuki-Sakaguchi",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Yuki-Sakaguchi/FrontDebugger.git"
+    "url": "git+ssh://git@github.com/Yuki-Sakaguchi/FrontDebugger.git"
   },
   "keywords": [
     "debug"
@@ -55,5 +55,14 @@
     "testMatch": [
       "**/test/**/*.test.ts"
     ]
-  }
+  },
+  "description": "テスト環境だけでデバッグを表示するライブラリ。",
+  "bugs": {
+    "url": "https://github.com/Yuki-Sakaguchi/FrontDebugger/issues"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  },
+  "author": "Yuki Sakaguchi"
 }
