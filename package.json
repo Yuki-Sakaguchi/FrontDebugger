@@ -1,6 +1,6 @@
 {
   "name": "front-debugger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "rollup --config rollup.config.js",
     "watch": "rollup -w --config rollup.config.js",
