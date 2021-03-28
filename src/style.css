@@ -2,11 +2,19 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.8);
   color: white;
+  z-index: 9999;
 }
 
 .front-debugger p {
   padding: 12px 20px;
-  margin-bottom: 6px;
+  margin-top: 3px;
+  background: rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 768px) {
+  .front-debugger p {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
 }

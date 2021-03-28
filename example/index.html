@@ -4,13 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FrontDebugger Test.</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="../lib/front-debugger.js"></script>
   </head>
   <body>
-    test
-    <button onClick="frontDebugger.log('test');">test!!</button>
+
+    <div class="flex justify-center items-center flex-col h-full">
+      <div class="container text-center px-3">
+        <h1 class="text-3xl md:text-5xl font-bold mb-5">Front Debugger</h1>
+        <p class="text-sm md:text-base">URLに <code class="bg-gray-300 px-2 py-1 rounded-sm">mode=test</code> がある時だけログが表示されます</p>
+        <button class="duration-300 bg-blue-400 hover:bg-blue-600 text-white mt-4 rounded-full px-4 py-2 text-xl" onClick="frontDebugger.log('テストモードです');">ログを出力する</button>
+      </div>
+    </div>
+
     <script>
-      const frontDebugger = new FrontDebugger();
+      const frontDebugger = new FrontDebugger({
+        test: () => location.search.indexOf('mode=test') >= 0,
+        isFront: true,
+        isBackground: true, 
+        prefix: '[test log]',
+        displayedTime: 2000,
+        parent: 'body',
+        className: 'front-debugger',
+      });
     </script>
+
   </body>
 </html>
