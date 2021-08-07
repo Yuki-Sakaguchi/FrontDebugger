@@ -1,7 +1,10 @@
 # FrontDebugger
+
 [![npm](https://img.shields.io/npm/v/front-debugger.svg)](https://www.npmjs.com/package/front-debugger)
 [![npm](https://img.shields.io/npm/dt/front-debugger.svg)](https://npmcharts.com/compare/front-debugger?minimal=true)
 [![npm](https://img.shields.io/npm/l/front-debugger.svg)](https://www.npmjs.com/package/game-capsule)
+
+![result](https://user-images.githubusercontent.com/16290220/128606621-28c80a38-18cd-4711-811a-d843f821701d.gif)
 
 テスト用に入れた `console.log` をあとで全部消すのってめんどうですよね。  
 本番反映後も動きを確認したかったり何かあったときの調査のために `console.log` はそのままの方が何かと便利...という場面もあると思います。  
